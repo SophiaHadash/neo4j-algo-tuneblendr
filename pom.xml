@@ -14,8 +14,8 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <neo4j.version>3.5.12</neo4j.version>
-    <neo4j-java-driver.version>1.7.5</neo4j-java-driver.version>
+    <neo4j.version>4.1.1</neo4j.version>
+    <neo4j-java-driver.version>4.1.1</neo4j-java-driver.version>
     <junit-jupiter.version>5.5.2</junit-jupiter.version>
     <maven-shade-plugin.version>3.2.1</maven-shade-plugin.version>
     <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
@@ -75,9 +75,8 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.1</version>
         <configuration>
-          <!-- Neo4j Procedures require Java 8 -->
-          <source>1.8</source>
-          <target>1.8</target>
+          <!-- Neo4j Procedures require Java 11 -->
+          <release>11</release>
         </configuration>
       </plugin>
       <plugin>
