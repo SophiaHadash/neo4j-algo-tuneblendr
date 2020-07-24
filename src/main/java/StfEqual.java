@@ -26,7 +26,7 @@ public class StfEqual {
     @Procedure(value = "tbl.stf.equal")
     @Description("Execute satisfaction function 'equal'")
     public void execute(@Name("configId") String configId,
-                                    @Name("groupId") String groupId) {
+                        @Name("groupId") String groupId) {
 
         Transaction tx = db.beginTx();
         try{
